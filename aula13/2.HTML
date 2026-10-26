@@ -1,0 +1,16 @@
+
+<?php
+
+$mensalidade = 200.00;
+$taxaReajuste = 10;
+
+$reajuste = $mensalidade * $taxaReajuste / 100;
+$novaMensalidade = $mensalidade + $reajuste;
+
+echo "<h2>Reajuste da mensalidade</h2>";
+echo "Mensalidade atual: R$ " . number_format($mensalidade, 2, ',', '.') . "<br>";
+echo "Taxa de reajuste: $taxaReajuste% <br>";
+echo "Valor do reajuste: R$ " . number_format($reajuste, 2, ',', '.') . "<br>";
+echo "Nova mensalidade: R$ " . number_format($novaMensalidade, 2, ',', '.');
+
+?>

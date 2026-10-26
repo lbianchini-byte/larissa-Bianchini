@@ -1,0 +1,21 @@
+
+<?php
+
+$salarioBruto = 3000.00;
+
+$inss = 300.00;
+$ir = 100.00;
+$valeTransporte = 180.00;
+
+$totalDescontos = $inss + $ir + $valeTransporte;
+$salarioLiquido = $salarioBruto - $totalDescontos;
+
+echo "<h2>Salário líquido</h2>";
+echo "Salário bruto: R$ " . number_format($salarioBruto, 2, ',', '.') . "<br>";
+echo "Desconto de INSS: R$ " . number_format($inss, 2, ',', '.') . "<br>";
+echo "Desconto de IR: R$ " . number_format($ir, 2, ',', '.') . "<br>";
+echo "Vale-transporte: R$ " . number_format($valeTransporte, 2, ',', '.') . "<br>";
+echo "Total de descontos: R$ " . number_format($totalDescontos, 2, ',', '.') . "<br>";
+echo "Salário líquido: R$ " . number_format($salarioLiquido, 2, ',', '.');
+
+?>
